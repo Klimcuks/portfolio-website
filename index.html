@@ -58,7 +58,7 @@
       </div>
     </nav>
     <!-- Home -->
-    <section class="bg-dark text-light p-4 text-center">
+    <section class="bg-dark text-light p-4 text-center" id="home">
       <div class="container">
         <img
           src="./images/20230915_172326.jpg"
@@ -144,7 +144,7 @@
     </section>
 
     <!-- About -->
-    <section class="bg-light text-dark p-4 text-center">
+    <section class="bg-light text-dark p-4 text-center" id="about">
         <div class="container">
           <div>
             <h1 class="p-3">About me</h1>
@@ -163,10 +163,54 @@
         </div>
     </section>
 
+    <section class="bg-dark text-light p-4 text-center" id="projects">
+      <div class="container">
+        <div>
+          <h1>Projects</h1>
+        </div>
+        <p class="p-4">Click on an image to visit the project page!</p>
+
+        <div class="row text-center p-5">
+          <div class="col-md">
+            <div>screenshot with a link </div>
+            <h2>Spotify UI</h2>
+          </div>
+          <div class="col-md">
+            <div>screenshot with a link </div>
+            <h2>Tenzi</h2>
+          </div>
+          <div class="col-md">
+            <div>screenshot with a link </div>
+            <h2>Greengrocers</h2>
+          </div>
+        </div>
+      </div>
+
+    </section>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+    </script>
+    
   </body>
 </html>
