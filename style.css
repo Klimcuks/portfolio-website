@@ -1,4 +1,9 @@
 .custom-border {
-    border: 5px solid #fca311; 
+    border: 5px solid #5ae4a7; 
+    border-radius: 10%;
+}
+
+.img-container img {
+    border: 5px solid #5ae4a7; 
     border-radius: 10%;
 }
