@@ -11,3 +11,19 @@
 body{
     padding-top: 56px;
 }
+
+
+.img-container {
+    position: relative;
+    /* overflow: hidden; */
+  }
+  
+  .img-hover {
+    transition: transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .img-hover:hover {
+    transform: scale(1.10); 
+    filter: brightness(0.7); 
+  }
+  
