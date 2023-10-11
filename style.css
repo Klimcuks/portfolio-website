@@ -1,29 +1,36 @@
 .custom-border {
-    border: 5px solid #5ae4a7; 
-    border-radius: 10%;
+  border: 5px solid #5ae4a7;
+  border-radius: 10%;
 }
 
 .img-container img {
-    border: 5px solid #5ae4a7; 
-    border-radius: 10%;
+  border: 5px solid #5ae4a7;
+  border-radius: 10%;
 }
 
-body{
-    padding-top: 56px;
+body {
+  padding-top: 56px;
 }
-
 
 .img-container {
-    position: relative;
-    /* overflow: hidden; */
-  }
-  
-  .img-hover {
-    transition: transform 0.3s ease, filter 0.3s ease;
-  }
-  
-  .img-hover:hover {
-    transform: scale(1.10); 
-    filter: brightness(0.7); 
-  }
-  
+  position: relative;
+  /* overflow: hidden; */
+}
+
+.img-hover {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.img-hover:hover {
+  transform: scale(1.1);
+  filter: brightness(0.7);
+}
+.project-links {
+  color: #5ae4a7;
+  text-decoration: none;
+}
+.project-links:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: bold;
+}
