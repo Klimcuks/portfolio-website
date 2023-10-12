@@ -15,12 +15,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
       <div class="container">
-        <div class="d-flex align-content-center flex-wrap">
+        <div class="d-flex align-content-center flex-wrap custom-font2">
             <div class="navbar-text" style="margin-right: 40px">
               <i class="bi bi-envelope-fill"></i> nikita.klimchuck@gmail.com
             </div>
@@ -37,7 +41,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
+          <ul class="navbar-nav ms-auto custom-font2">
             <li class="nav-item">
               <a href="#home" class="nav-link">Home</a>
             </li>
@@ -64,10 +68,10 @@
         />
       </div>
       <div class="text-center pt-4">
-        <h1>Nikita Klimchuks</h1>
-        <h2>Frontend Web Developer</h2>
+        <h1 class="custom-font1">Nikita Klimchuks</h1>
+        <h2 class="custom-font2">Frontend Web Developer</h2>
       </div>
-      <div class="d-inline-flex align-content-center flex-wrap mt-4 pb-2 ">
+      <div class="d-inline-flex align-content-center flex-wrap mt-4 pb-2 custom-font2">
         <div class="grid row pt-4">
           <svg
             role="img"
@@ -203,7 +207,7 @@
     <section class="bg-light text-dark p-4 text-center" id="about">
         <div class="container">
           <div>
-            <h1 class="p-3">About me</h1>
+            <h1 class="p-3 custom-font2">About me</h1>
           </div>
           <div class="p-4">
             <img 
@@ -212,9 +216,13 @@
           alt="profile-pic"
             />
           </div>
-          <div class="p-5">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident accusamus autem pariatur, voluptas alias praesentium mollitia, inventore laboriosam maiores natus et ab harum expedita necessitatibus impedit? Esse quae doloremque quaerat!
-            Debitis facere a consectetur quas! In culpa officiis tempore, aut magni a? Molestias, explicabo ex velit nihil asperiores aspernatur facere vero eos vel esse quis voluptatem aliquam. Iste, ea ducimus!</p>
+          <div class="p-2 bg-body shadow p-1 mb-2 bg-body-tertiary rounded">
+            <p class="custom-font3">My name is Nikita, and I recently graduated from Boolean's intensive full-time Frontend Web Development bootcamp, 
+              marking a pivotal step in my journey towards a career in coding. I have a vocational degree in transportation and 
+              logistics management, and for the past several years I've been working as a personal trainer, but around 2 years ago 
+              I decided to reskill and pursue my true passion: coding. What excites me most about a career in development is the potential 
+              to create solutions that positively impact people's lives. The prospect of crafting tools that enhance their daily experiences 
+              resonates deeply with me.</p>
           </div>
         </div>
     </section>
@@ -223,9 +231,8 @@
     <section class="bg-dark text-light p-4 text-center" id="projects">
       <div class="container">
         <div>
-          <h1 class="p-3">Projects</h1>
+          <h1 class="p-3 custom-font2">Projects</h1>
         </div>
-        <p class="p-2">Click on an image to visit the project page!</p>
         <div class="row text-center p-4">
           <div class="col-md">
             <div class="img-container">
@@ -233,10 +240,13 @@
                 <img class="img-fluid rounded-5 img-hover" src="./images/Scrnsh1.png" alt="Spotify UI">
               </a>
             </div>
-            <h2 class="p-1">Spotify UI</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt ipsam, veniam maxime ex explicabo? Eum rerum eius sit harum, in ullam error reprehenderit earum blanditiis optio tempora reiciendis praesentium.</p>
+            <h3 class="p-1">Spotify UI</h3>
+            <p>I developed a replica of the Spotify user interface to demonstrate my ability to replicate complex designs while adhering to specified requirements.</p>
+            <p>
+              Technologies used: HTML5, CSS3
+            </p>
             <div>
-                <span class="m-2"><a href="https://boolean-uk-html-spotify-nhnb86q7b-klimcuks.vercel.app" class="project-links">Live site</a></span>|<span class="m-2"><a href="https://github.com/Klimcuks/boolean-uk-html-spotify" class="project-links">Repo</a></span>
+                <span><a href="https://boolean-uk-html-spotify-nhnb86q7b-klimcuks.vercel.app" class="project-links" target="_blank">Live site</a></span>
             </div>  
           </div>
           <div class="col-md">
@@ -245,10 +255,16 @@
                 <img class="img-fluid rounded-5 img-hover" src="./images/Scrnsh2.png" alt="tenzi">
               </a>
             </div>
-            <h2 class="p-1">Tenzi</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt ipsam, veniam maxime ex explicabo? Eum rerum eius sit harum, in ullam error reprehenderit earum blanditiis optio tempora reiciendis praesentium.</p>
+            <h3 class="p-1">Tenzi</h3>
+            <p>
+              A dice rolling game in which a player rolls the dice with an objective to roll all ten dice to the same number.
+              Developing the game required logical thinking and problem-solving skills, which are fundamental attributes for a developer. 
+            </p>
+            <p>
+              Technologies used: HTML5, CSS3, React
+            </p>
             <div>
-              <span class="m-2"><a href="https://tenzi-a6kexcxwg-klimcuks.vercel.app" class="project-links">Live site</a></span>|<span class="m-2"><a href="https://github.com/Klimcuks/Tenzi" class="project-links">Repo</a></span>
+              <span><a href="https://tenzi-a6kexcxwg-klimcuks.vercel.app" class="project-links" target="_blank">Live site</a></span>
           </div> 
           </div>
           <div class="col-md">
@@ -257,10 +273,17 @@
                 <img class="img-fluid rounded-5 img-hover" src="./images/Screenshot 2023-10-11 130136.png" alt="brewery-tours">
               </a>
             </div>
-            <h2 class="p-1">Brewery Tours</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum incidunt ipsam, veniam maxime ex explicabo? Eum rerum eius sit harum, in ullam error reprehenderit earum blanditiis optio tempora reiciendis praesentium.</p>
+            <h3 class="p-1">Brewery Tours</h3>
+            <p>In this challenge, I had to put into practice everything I learned 
+              about dynamic DOM creation, event listeners, state and requesting 
+              data from a server. The goal was to fetch information about American 
+              breweries from <a href="https://www.openbrewerydb.org/" target="_blank">this API</a> and display it using templates made with
+              HTML & CSS</p>
+            <p>
+              Technologies used: HTML5, CSS3, JavaScript, API
+            </p>
             <div>
-              <span class="m-2"><a href="https://js-dom-brewery-tours-challenge-fd2p7kiwb-klimcuks.vercel.app" class="project-links">Live site</a></span>|<span class="m-2"><a href="https://github.com/Klimcuks/js-dom-brewery-tours-challenge" class="project-links">Repo</a></span>
+              <span><a href="https://js-dom-brewery-tours-challenge-fd2p7kiwb-klimcuks.vercel.app" class="project-links" target="_blank">Live site</a></span>
           </div> 
           </div>
         </div>

@@ -14,7 +14,6 @@ body {
 
 .img-container {
   position: relative;
-  /* overflow: hidden; */
 }
 
 .img-hover {
@@ -30,7 +29,18 @@ body {
   text-decoration: none;
 }
 .project-links:hover {
-  text-decoration: underline;
   cursor: pointer;
   font-weight: bold;
+}
+.custom-font1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight:600;
+}
+.custom-font2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+}
+.custom-font3 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
 }
