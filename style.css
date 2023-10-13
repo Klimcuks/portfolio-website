@@ -44,3 +44,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
 }
+
+@media (max-width: 512px){
+  .custom-padding{
+    padding-top: 70px;
+  }
+}
